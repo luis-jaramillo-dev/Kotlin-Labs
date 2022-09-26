@@ -48,8 +48,8 @@ files:
 - name: src/board/BoardImpl.kt
   visible: true
   placeholders:
-  - offset: 90
-    length: 6
+  - offset: 156
+    length: 22
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -57,14 +57,14 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 149
+  - offset: 231
     length: 6
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 149
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |+
     package board
