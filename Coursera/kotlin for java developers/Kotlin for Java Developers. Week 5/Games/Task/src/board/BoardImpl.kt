@@ -4,7 +4,7 @@ import java.lang.IllegalArgumentException
 import board.Direction.*
 
 fun createSquareBoard(width: Int): SquareBoard = SquareBoardImpl(width)
-fun <T> createGameBoard(width: Int): GameBoard<T> = TODO()
+fun <T> createGameBoard(width: Int): GameBoard<T> = GameBoardImpl(width)
 
 open class SquareBoardImpl(final override val width: Int): SquareBoard {
 
