@@ -17,10 +17,27 @@ package games.game2048
  *
  * You can find more examples in 'TestGame2048Helper'.
 */
-fun <T : Any> List<T?>.moveAndMergeEqual(merge: (T) -> T): List<T>
-        {
-                val result = mutableListOf<T>()
+fun <T : Any> List<T?>.moveAndMergeEqual(merge: (T) -> T): List<T>{
+            val result = mutableListOf<T>()
 
-                return result
+            val listIterator = filterNotNull().listIterator()
+            var currentValue = listIterator.nextOrNull()
+            var nextValue = listIterator.nextOrNull()
+
+            while (currentValue != null){
+                if (currentValue == nextValue){
+                    result.add(merge(currentValue))
+                    currentValue = listIterator.nextOrNull()
+                    nextValue = listIterator.nextOrNull()
+                }else{
+                    result.add(currentValue)
+                    currentValue = nextValue
+                    nextValue =  listIterator.nextOrNull()
+                }
+            }
+            return result.toList()
         }
 
+fun <E> ListIterator<E?>.nextOrNull(): E? {
+    return if (hasNext()) next() else null
+}
