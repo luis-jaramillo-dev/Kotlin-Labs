@@ -5,14 +5,15 @@ Android Native developer engenieer base on Medellin-Colombia and this is a compi
 
 # Topics
 
-Language - Kotlin, Java
+ 
+[Language - Kotlin, Java](readme.com)
+ 
+[Framework - Android Mobile](readme.com)
 
-Framework - Android Mobile
+[Libraries - Android Mobile](readme.com)
 
-Libraries - Android Mobile
+[Code-Based Testing - Android Mobile](readme.com)
 
-Code-Based Testing - Android Mobile
-
-Design
+[Design](readme.com)
 
 
